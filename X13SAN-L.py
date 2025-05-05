@@ -19,3 +19,10 @@ output_mask = 0b00000101
 bus.write_byte_data(DEVICE_ADDR, REG_OUTPUT, output_mask)
 
 print("GPIOs configured and output written.")
+
+#set GP0–GP3 as outputs, GP4–GP7 as inputs
+
+# write a value of 0b00000101 to the output register: this sets GP0 = High, GP1 = Low, GP2 = High, GP3 = Low
+
+# Input pins can be read using the input register (0x00) if needed
+
